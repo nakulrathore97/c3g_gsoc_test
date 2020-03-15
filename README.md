@@ -8,6 +8,8 @@
 
 ## Details
 
+You need to place the .bam files in the directory.
+
 The bash script is `run.sh`.
 The comments describe all the issues I encountered and their fixes.
 
@@ -21,8 +23,6 @@ The R script is `gsoc_test.R`
 `Rscript gsoc_test.R`
 
 ## Paths 
-
-The .bam files are already present in the directory.
 
 The tablemaker executable is also present in the directory.
 
