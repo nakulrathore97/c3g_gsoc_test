@@ -1,0 +1,66 @@
+make: Nothing to be done for 'release'.
+..Downloading test data..
+..unpacking test data..
+
+Test 1: Short reads
+  OK.
+Test 2: Short reads and super-reads
+  OK.
+Test 3: Long reads
+  OK.
+Test 4: Long reads with annotation guides
+  OK.
+
+generating .gtf for brain file
+
+generating .gtf for liver file
+
+Command line:
+./tablemaker -p 4 -q -W -G merged.gtf -o sample01 RNA_nanopore.brain.C1R1_mapping_E94_minimap2_primary_no_read_less_than_80QC.bam --library-type fr-firststrand 
+[20:50:42] Loading reference annotation.
+[20:50:43] Inspecting reads and determining fragment length distribution.
+Processed 17299 loci.                       
+> Map Properties:
+>	Normalized Map Mass: 252992.00
+>	Raw Map Mass: 252992.00
+>	Fragment Length Distribution: Truncated Gaussian (default)
+>	              Default Mean: 200
+>	           Default Std Dev: 80
+[20:50:52] Estimating transcript abundances.
+Processed 17299 loci.                       
+
+Command line:
+./tablemaker -p 4 -q -W -G merged.gtf -o sample02 RNA_nanopore.liver.C1R1_mapping_E94_minimap2_primary_no_read_less_than_80QC.bam --library-type fr-firststrand 
+[20:51:28] Loading reference annotation.
+[20:51:30] Inspecting reads and determining fragment length distribution.
+Processed 17299 loci.                       
+> Map Properties:
+>	Normalized Map Mass: 253514.00
+>	Raw Map Mass: 253514.00
+>	Fragment Length Distribution: Truncated Gaussian (default)
+>	              Default Mean: 200
+>	           Default Std Dev: 80
+[20:51:38] Estimating transcript abundances.
+Processed 17299 loci.                       
+
+
+Attaching package: ‘ballgown’
+
+The following object is masked from ‘package:base’:
+
+    structure
+
+Sun Mar 15 20:52:17 2020
+Sun Mar 15 20:52:17 2020: Reading linking tables
+Sun Mar 15 20:52:17 2020: Reading intron data files
+Sun Mar 15 20:52:17 2020: Merging intron data
+Sun Mar 15 20:52:17 2020: Reading exon data files
+Sun Mar 15 20:52:17 2020: Merging exon data
+Sun Mar 15 20:52:18 2020: Reading transcript data files
+Sun Mar 15 20:52:18 2020: Merging transcript data
+Wrapping up the results
+Sun Mar 15 20:52:18 2020
+Warning message:
+In ballgown(samples = samplePaths) :
+  the following exon(s) did not appear in e_data.ctab: 112, 2533, 3376, 4099, 7334, 7335, 10236, 16814, 16903, 17120, 17881
+[1] "output fpkm csv file is present at: /home/nakul/stringtie/fpkm_output.csv"
